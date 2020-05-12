@@ -1,0 +1,46 @@
+{
+  "name": "Electron-App",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/main/main.js",
+  "build": {
+    "files": [
+      "main/",
+      "dist/",
+      "node_modules/",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "directories": {
+      "output": "release"
+    },
+    "appId": "c1_destop_tool",
+    "asar": false
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon --watch main.js --exec \"electron ./main/main.js\"",
+    "debug": "electron --inspect=5858 -w ./main/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist-mac": "electron-builder -m",
+    "dist-win": "electron-builder -w",
+    "dist-linux": "electron-builder -l",
+    "dist-all": "electron-builder -mwl",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "electron": "^8.0.1",
+    "electron-builder": "^22.3.2",
+    "electron-debug": "^3.0.1",
+    "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
