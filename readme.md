@@ -1,9 +1,10 @@
-# umi-electron-javascript
+# electron-template
 
-### 基于umijs + electron + javascript的基础开发环境
+### 基于adminelte + electron + javascript的基础开发环境
 
 ## 主要特性
-- 支持整个应用的热重载，electron main服务使用javascript，不进行额外的构建，render使用react(umi脚手架)
+- 支持整个应用的热重载，electron main服务使用javascript，不进行额外的构建，render使用adminlte
+文档参考  https://adminlte.io/
 
 ## 项目结构
 
