@@ -21,7 +21,6 @@ function createWindow() {
   mainWindow = new BrowserWindow(MAIN_WINDOW_CONFIG);
   setApplicationMenu();
 
-
   mainWindow.loadURL(
     url.format({
       pathname: path.join(__dirname, '../renderer/index.html'),
