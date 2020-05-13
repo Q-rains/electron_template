@@ -9,8 +9,8 @@ let mainWindow = null;
 
 // const preloadPath = path.join(__dirname, '../dist/renderer/window_node_api.js');
 const MAIN_WINDOW_CONFIG = {
-  height: 600,
-  width: 800,
+  height: 720,
+  width: 1280,
   webPreferences: {
     nodeIntegration: true,
     // preload: fs.existsSync(preloadPath) ? preloadPath : null,
